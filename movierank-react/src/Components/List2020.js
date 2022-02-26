@@ -1,12 +1,12 @@
 import React from 'react';
 import './List.css';
 
-function Home() {
+function List2020() {
     return (
         <div className="list_div">
-            <h1>This is Home.</h1>
+            <h1>This is 2020.</h1>
         </div>
     );
 }
 
-export default Home;
+export default List2020;

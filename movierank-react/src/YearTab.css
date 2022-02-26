@@ -1,0 +1,9 @@
+.yeartab_div {
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .yeartab_div {
+    zoom: 0.9;
+    margin-left: 5px;
+  }
+}

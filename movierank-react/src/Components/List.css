@@ -1,0 +1,16 @@
+.list_div {
+  justify-content: center;
+  width: 1820px;
+  margin: 6px auto 20px;
+  background-color: #c9c9c9;
+  padding: 20px;
+  border-radius: 10px;
+}
+.list_row {
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .list_row {
+    display: inline-block;
+  }
+}
