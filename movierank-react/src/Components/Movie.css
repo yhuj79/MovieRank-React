@@ -1,7 +1,7 @@
 .movie_div {
   display: flex;
   width: 910px;
-  margin: 20px;
+  margin: 15px;
   padding: 20px;
   background-color: #d5d5d5;
   border-radius: 10px;
@@ -13,14 +13,32 @@
 .movie_img {
   width: 220px;
   margin-right: 10px;
+  margin-bottom: 18px;
   border-radius: 10px;
+}
+.movie_youtubebutton {
+  background-color: #ff0000;
+  font-family: "Jua";
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 5px 64px 5px;
+  height: 34px;
+  border-radius: 7px;
+  border: 3px solid #ff4848;
+}
+.movie_youtubebutton:hover {
+  background-color: #ff7e7e;
+}
+.movie_infodiv {
+  margin-left: 10px;
 }
 .movie_name {
   font-family: "Black Han Sans";
   font-size: 32px;
   margin-bottom: 5px;
 }
-.movie_rddiv {
+.movie_firstbox {
   padding: 5px;
   border: 2px solid #232323;
   border-radius: 7px;
@@ -33,12 +51,14 @@
 .movie_actor {
   font-size: 13px;
 }
-.movie_score {
+.movie_secondbox {
   display: flex;
   margin: 12px 0 0;
 }
-.movie_score p {
+.movie_secondbox p {
   text-align: center;
+  font-weight: 600;
+  color: #000000;
   padding: 3px;
 }
 .movie_tomato {
@@ -53,20 +73,41 @@
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-.movie_metac {
+.movie_metacritic {
   width: 170px;
   border-radius: 10px;
   padding: 3px;
   margin-left: 10px;
   border: 3px solid #edd200;
 }
-.movie_metalogo {
+.movie_metacriticlogo {
   background-color: #edd200;
   margin: -4px -4px 3px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-.movie_box {
+.nonestyle {
+  color: #747474;
+}
+.movie_boxoffice {
+  width: 198px;
+  border-radius: 10px;
+  padding: 3px;
+  margin-left: 10px;
+  border: 3px solid #c4b73b;
+}
+.movie_boxofficelogo {
+  background-color: #c4b73b;
+  margin: -4px -4px 3px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.movie_boxofficestat {
+  font-size: 20px;
+  font-weight: 700 !important;
+  line-height: 2.1;
+}
+.movie_thirdbox {
   margin-top: 12px;
 }
 .movie_award {
@@ -84,9 +125,10 @@
   padding: 5px;
   margin-top: -5px;
 }
-.movie_storybutton {
+.movie_morebutton {
   background-color: #ffef85;
   border: none;
+  font-size: 11px;
   font-weight: 700;
   color: #747474;
 }
