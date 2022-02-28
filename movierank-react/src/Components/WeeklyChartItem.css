@@ -1,0 +1,12 @@
+.chartitem_movietitle {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+}
+.chartitem_movietitlesection {
+  display: flex;
+}
+.chartitem_rankchange {
+  font-size: 20px;
+  display: flex;
+}

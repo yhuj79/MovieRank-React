@@ -23,7 +23,7 @@ function Movie({ rank, name, image, link, release, audience, tmeter,
             <div className="movie_infodiv">
                 <p className="movie_name">{rank}. {name}</p>
                 <div className="movie_firstbox">
-                    <p className="movie_rd">개봉 : {release}.</p>
+                    <p className="movie_rd">개봉 : {release}</p>
                     <p className="movie_rd">누적 : {audience.toLocaleString('en')}명</p>
                     <p className="movie_rd">출현 : <span className="movie_actor">{actor}</span></p>
                 </div>

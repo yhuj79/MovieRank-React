@@ -1,3 +1,48 @@
 .homeslide_div {
-  width: 200px;
+  width: 800px;
+}
+.homeslide_img {
+  width: 400px;
+  border-radius: 15px;
+}
+.react-3d-carousel
+  .slider-container
+  .slider-content
+  .slider-single
+  .slider-single-content {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+.react-3d-carousel .slider-container .slider-content .slider-single {
+  width: 600px !important;
+}
+.react-3d-carousel
+  .slider-container
+  .slider-content
+  .slider-single.preactive
+  .slider-single-content {
+  opacity: 0.5 !important;
+  transform: translateX(-20%) scale(0.8) !important;
+}
+.react-3d-carousel
+  .slider-container
+  .slider-content
+  .slider-single.proactive
+  .slider-single-content {
+  opacity: 0.5 !important;
+  transform: translateX(20%) scale(0.8) !important;
+}
+.slider-left div {
+  background-color: blue;
+  width: 60px;
+  height: 440px;
+  margin-left: 61px;
+  border: none !important;
+}
+.slider-right div {
+  background-color: blue;
+  width: 60px;
+  height: 440px;
+  margin-left: -104px;
+  border: none !important;
 }

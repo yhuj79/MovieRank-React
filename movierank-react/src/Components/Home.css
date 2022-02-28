@@ -1,8 +1,9 @@
 .home_div {
   display: flex;
+  margin: 15px;
 }
-.home_weeklychart {
-  width: 300px;
+.home_chart {
+  width: 500px;
   background-color: #d5d5d5;
   padding: 10px;
   border-radius: 10px;

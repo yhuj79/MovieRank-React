@@ -1,23 +1,11 @@
 import React, { Component } from "react";
-import ChartItem from "./ChartItem";
+import WeeklyChartItem from "./WeeklyChartItem";
+import moment from 'moment';
+import 'moment/locale/ko';
 
 const key = "d4099bba8c7c754a4c1c195450e4a028";
-
-const getDate = new Date();
-const yDate = getDate.getTime(1 * 24 * 60 * 60 * 1000);
-getDate.setTime(yDate);
-var yYear = getDate.getFullYear();
-var yMonth = getDate.getMonth() + 1;
-var yDay = getDate.getDate() - 1;
-
-if (yMonth < 10) {
-    yMonth = "0" + yMonth;
-}
-if (yDay < 10) {
-    yDay = "0" + yDay;
-}
-const resultDate = yYear + "-" + yMonth + "-" + yDay;
-const res = resultDate.slice(0, 10).replace(/-/g, "");
+const format = "YYYYMMDD";
+const last_sunday = moment().day(7).subtract(7, 'days').format(format);
 
 class WeeklyChart extends Component {
     state = {};
@@ -32,7 +20,7 @@ class WeeklyChart extends Component {
     };
     _callApi = () => {
         return fetch(
-            `http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchWeeklyBoxOfficeList.json?key=${key}&targetDt=${res}&weekGb=0`
+            `http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchWeeklyBoxOfficeList.json?key=${key}&targetDt=${last_sunday}&weekGb=0`
         )
             .then(a => a.json())
             .then(json => json.boxOfficeResult.weeklyBoxOfficeList)
@@ -42,9 +30,14 @@ class WeeklyChart extends Component {
     _renderMovies = () => {
         const movies = this.state.movies.map((weeklyBoxOfficeList, index) => {
             return (
-                <ChartItem
+                <WeeklyChartItem
+                    rankOldAndNew={weeklyBoxOfficeList.rankOldAndNew}
+                    rankInten={weeklyBoxOfficeList.rankInten}
                     rank={weeklyBoxOfficeList.rank}
                     movieNm={weeklyBoxOfficeList.movieNm}
+                    openDt={weeklyBoxOfficeList.openDt}
+                    audiCnt={weeklyBoxOfficeList.audiCnt}
+                    salesShare={weeklyBoxOfficeList.salesShare}
                     key={index}
                 />
             );
