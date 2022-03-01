@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import DailyChartItem from "./DailyChartItem";
+import RankDailyItem from "./RankDailyItem";
 import moment from 'moment';
 import 'moment/locale/ko';
 
 const key = "d4099bba8c7c754a4c1c195450e4a028";
 const yesterday = moment().subtract(1, 'days').format('YYYYMMDD');
 
-class DailyChart extends Component {
+class RankDaily extends Component {
     state = {};
     componentDidMount() {
         this._getMovies();
@@ -29,7 +29,7 @@ class DailyChart extends Component {
     _renderMovies = () => {
         const movies = this.state.movies.map((dailyBoxOfficeList, index) => {
             return (
-                <DailyChartItem
+                <RankDailyItem
                     rankOldAndNew={dailyBoxOfficeList.rankOldAndNew}
                     rankInten={dailyBoxOfficeList.rankInten}
                     rank={dailyBoxOfficeList.rank}
@@ -44,12 +44,18 @@ class DailyChart extends Component {
         return movies;
     };
     render() {
+        const loading = {
+            textAlign: 'center',
+            fontFamily: 'Jua',
+            fontSize: '30px',
+        }
         const { movies } = this.state;
         return (
-            <div className={movies ? "DailyChart" : "DailyChart-loading"}>
-                {movies ? this._renderMovies() : "로딩중 ..."}
+            <div style={loading}
+                className={movies ? "RankDaily" : "RankDaily-loading"}>
+                {movies ? this._renderMovies() : "Loading ···"}
             </div>
         );
     }
 }
-export default DailyChart;
+export default RankDaily;

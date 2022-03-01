@@ -1,17 +1,17 @@
 import React from 'react';
 import './List.css';
-import Movie from './Movie';
+import Movie from '../Movie';
 
-function List2020() {
+function List2021() {
     return (
-        <div className="list_div">
+        <div className="list_longdiv">
             <div className="list_row">
                 <Movie
                     rank="1"
                     name="스파이더맨 : 노 웨이 홈 🥇"
                     image="https://movie-phinf.pstatic.net/20211215_297/1639556766975z0641_JPEG/movie_image.jpg"
                     link="https://youtu.be/W7edvITC9g4"
-                    release="2021.12.15"
+                    release="2021.12.15."
                     audience={7524693}
                     tmeter={93} tscore={98}
                     mscore={71} mreview={8.9}
@@ -27,7 +27,7 @@ function List2020() {
                     name="모가디슈 🥈"
                     image="https://movie-phinf.pstatic.net/20210820_122/1629448997924YXUCv_JPEG/movie_image.jpg"
                     link="https://youtu.be/VOdDMmSjle0"
-                    release="2021.07.28"
+                    release="2021.07.28."
                     audience={3613981}
                     tmeter={93} tscore={87}
                     mscore={77} mreview={7.2}
@@ -45,7 +45,7 @@ function List2020() {
                     name="이터널스 🥉"
                     image="https://movie-phinf.pstatic.net/20211026_97/1635213484861yCnwO_JPEG/movie_image.jpg"
                     link="https://youtu.be/BdkSkI61aGo"
-                    release="2021.11.03"
+                    release="2021.11.03."
                     audience={3050419}
                     tmeter={47} tscore={78}
                     mscore={52} mreview={6.3}
@@ -61,7 +61,7 @@ function List2020() {
                     name="블랙 위도우"
                     image="https://movie-phinf.pstatic.net/20210617_272/1623906098516QjpeS_JPEG/movie_image.jpg"
                     link="https://youtu.be/BOEVQSprNv4"
-                    release="2021.07.07"
+                    release="2021.07.07."
                     audience={2962088}
                     tmeter={79} tscore={91}
                     mscore={67} mreview={6.5}
@@ -79,7 +79,7 @@ function List2020() {
                     name="분노의 질주 : 더 얼티메이트"
                     image="https://movie-phinf.pstatic.net/20210421_37/1618971733493B4ykS_JPEG/movie_image.jpg"
                     link="https://youtu.be/L9Y-hn2COm0"
-                    release="2021.05.19"
+                    release="2021.05.19."
                     audience={2292413}
                     tmeter={59} tscore={82}
                     mscore={58} mreview={4.7}
@@ -96,11 +96,11 @@ function List2020() {
                     name="싱크홀"
                     image="https://movie-phinf.pstatic.net/20210726_114/1627265960693kkM0B_JPEG/movie_image.jpg"
                     link="https://youtu.be/EId_z8wrKao"
-                    release="2021.08.11"
+                    release="2021.08.11."
                     audience={2195683}
                     tmeter={0} tscore={0}
                     mscore={0} mreview={0}
-                    boxoffice={17761859}
+                    boxoffice={18804231}
                     award="21황금촬영상 남자인기상"
                     actor="차승원(정만수), 김성균(박동원), 이광수(김승현)"
                     story="서울 입성과 함께 내 집 마련의 꿈을 이룬 가장 ‘동원(김성균)’ 이사 첫날부터 프로 참견러 ‘만수’(차승원)와 사사건건 부딪힌다.
@@ -115,7 +115,7 @@ function List2020() {
                     name="극장판 귀멸의 칼날 : 무한열차편"
                     image="https://movie-phinf.pstatic.net/20210126_174/1611638248803840HH_JPEG/movie_image.jpg"
                     link="https://tv.naver.com/v/16586480"
-                    release="2021.01.27"
+                    release="2021.01.27."
                     audience={2151861}
                     tmeter={98} tscore={99}
                     mscore={72} mreview={8.4}
@@ -133,7 +133,7 @@ function List2020() {
                     name="베놈 2 : 렛 데어 비 카니지"
                     image="https://movie-phinf.pstatic.net/20210929_275/1632903680953494p8_JPEG/movie_image.jpg"
                     link="https://youtu.be/V6aWnlhH6ug"
-                    release="2021.10.13"
+                    release="2021.10.13."
                     audience={2123652}
                     tmeter={59} tscore={84}
                     mscore={49} mreview={5.8}
@@ -150,7 +150,7 @@ function List2020() {
                     name="소울"
                     image="https://movie-phinf.pstatic.net/20210107_160/1609984702837oNdmw_JPEG/movie_image.jpg"
                     link="https://youtu.be/Q0zFPlArth0"
-                    release="2021.01.20"
+                    release="2021.01.20."
                     audience={2048228}
                     tmeter={95} tscore={88}
                     mscore={83} mreview={8.2}
@@ -168,7 +168,7 @@ function List2020() {
                     name="크루엘라"
                     image="https://movie-phinf.pstatic.net/20210512_139/1620799657168vGIqq_JPEG/movie_image.jpg"
                     link="https://youtu.be/yfSMTFzw-Kw"
-                    release="2021.05.26"
+                    release="2021.05.26."
                     audience={1983396}
                     tmeter={74} tscore={97}
                     mscore={59} mreview={7.1}
@@ -189,4 +189,4 @@ function List2020() {
         </div>
     );
 }
-export default List2020;
+export default List2021;

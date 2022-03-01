@@ -1,6 +1,16 @@
 .list_div {
   justify-content: center;
   width: 1820px;
+  height: 1658px;
+  margin: 6px auto 20px;
+  background-color: #c9c9c9;
+  padding: 20px;
+  border-radius: 10px;
+}
+.list_longdiv {
+  justify-content: center;
+  width: 1820px;
+  height: 100%;
   margin: 6px auto 20px;
   background-color: #c9c9c9;
   padding: 20px;

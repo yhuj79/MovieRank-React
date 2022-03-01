@@ -1,8 +1,8 @@
 import React from 'react';
 import HomeSlide from './HomeSlide';
-import WeeklyChart from './WeeklyChart';
-import DailyChart from './DailyChart';
-import './List.css';
+import RankWeekly from './RankWeekly';
+import RankDaily from './RankDaily';
+import './List/List.css';
 import './Home.css';
 import moment from 'moment';
 import 'moment/locale/ko';
@@ -13,22 +13,27 @@ function Home() {
     const lastlast_sunday = moment().day(7).subtract(13, 'days').format(format);
     const yesterday = moment().subtract(1, 'days').format(format);
     return (
-        <div className="list_div" style={{ height: '1200px' }}>
+        <div className="list_div">
             <div className="home_div">
-                <div>
+                <div className="home_homeslide">
+                    <p className="homeslide_title">Yearly Box Office</p>
                     <HomeSlide />
                 </div>
                 <div className="home_chart">
-                    <h1>주간 박스오피스</h1>
-                    <p>{lastlast_sunday} ~ {last_sunday}</p>
+                    <div style={{ display: 'flex' }}>
+                        <p className="home_charttitle">주간 박스오피스</p>
+                        <p className="home_chartday">&emsp;{lastlast_sunday} ~ {last_sunday}</p>
+                    </div>
                     <br />
-                    <WeeklyChart />
+                    <RankWeekly />
                 </div>
                 <div className="home_chart">
-                    <h1>일간 박스오피스</h1>
-                    <p>{yesterday}</p>
+                    <div style={{ display: 'flex' }}>
+                        <p className="home_charttitle">일간 박스오피스</p>
+                        <p className="home_chartday">&emsp;{yesterday}</p>
+                    </div>
                     <br />
-                    <DailyChart />
+                    <RankDaily />
                 </div>
             </div>
         </div>

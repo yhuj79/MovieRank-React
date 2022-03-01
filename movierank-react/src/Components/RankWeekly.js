@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import WeeklyChartItem from "./WeeklyChartItem";
+import React, { Component } from 'react';
+import RankWeeklyItem from './RankWeeklyItem';
 import moment from 'moment';
 import 'moment/locale/ko';
 
@@ -7,7 +7,7 @@ const key = "d4099bba8c7c754a4c1c195450e4a028";
 const format = "YYYYMMDD";
 const last_sunday = moment().day(7).subtract(7, 'days').format(format);
 
-class WeeklyChart extends Component {
+class RankWeekly extends Component {
     state = {};
     componentDidMount() {
         this._getMovies();
@@ -30,7 +30,7 @@ class WeeklyChart extends Component {
     _renderMovies = () => {
         const movies = this.state.movies.map((weeklyBoxOfficeList, index) => {
             return (
-                <WeeklyChartItem
+                <RankWeeklyItem
                     rankOldAndNew={weeklyBoxOfficeList.rankOldAndNew}
                     rankInten={weeklyBoxOfficeList.rankInten}
                     rank={weeklyBoxOfficeList.rank}
@@ -45,12 +45,18 @@ class WeeklyChart extends Component {
         return movies;
     };
     render() {
+        const loading = {
+            textAlign: 'center',
+            fontFamily: 'Jua',
+            fontSize: '30px',
+        }
         const { movies } = this.state;
         return (
-            <div className={movies ? "WeeklyChart" : "WeeklyChart-loading"}>
-                {movies ? this._renderMovies() : "로딩중 ..."}
+            <div style={loading}
+                className={movies ? "RankWeekly" : "RankWeekly-loading"}>
+                {movies ? this._renderMovies() : "Loading ···"}
             </div>
         );
     }
 }
-export default WeeklyChart;
+export default RankWeekly;

@@ -4,7 +4,7 @@ import './Movie.css';
 function Movie({ rank, name, image, link, release, audience, tmeter,
     tscore, mscore, mreview, boxoffice, actor, award, story }) {
 
-    const [limit, setLimit] = useState(239);
+    const [limit, setLimit] = useState(233);
     const toggleEllipsis = (str, limit) => {
         return {
             string: str.slice(0, limit),
