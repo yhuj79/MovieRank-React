@@ -2,7 +2,7 @@ import React from 'react';
 import './List.css';
 import Movie from '../Movie';
 
-function List2017() {
+function List2016() {
     return (
         <div className="list_longdiv">
             <div className="list_row">
@@ -191,4 +191,4 @@ function List2017() {
         </div>
     );
 }
-export default List2017;
+export default List2016;
