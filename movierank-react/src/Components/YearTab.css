@@ -3,7 +3,8 @@
 }
 @media screen and (max-width: 767px) {
   .yeartab_div {
-    zoom: 0.9;
+    zoom: 0.7;
     margin-left: 5px;
+    margin-bottom: -5px;
   }
 }

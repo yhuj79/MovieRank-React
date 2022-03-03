@@ -1,7 +1,7 @@
 .list_div {
   justify-content: center;
   width: 1820px;
-  height: 1658px;
+  height: 100%;
   margin: 6px auto 20px;
   background-color: #c9c9c9;
   padding: 20px;
@@ -20,7 +20,14 @@
   display: flex;
 }
 @media screen and (max-width: 767px) {
+  .list_div {
+    width: 800px;
+  }
+  .list_longdiv {
+    width: 800px;
+  }
   .list_row {
     display: inline-block;
+    zoom: 0.8;
   }
 }
