@@ -1,6 +1,8 @@
 .header_ {
   background-color: #c9c9c9;
+  display: flex;
   text-align: center;
+  justify-content: center;
   margin-bottom: 40px;
   padding: 5px 20px 20px;
 }

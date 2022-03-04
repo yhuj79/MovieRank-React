@@ -4,6 +4,17 @@
   margin: 5px 5px 20px;
   border: 3px solid #c0c0c0;
   border-radius: 10px;
+  animation: chartitemAct 0.7s;
+}
+@keyframes chartitemAct {
+  from {
+    opacity: 0;
+    transform: translateY(-5%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .chartitem_div:hover {
   background-color: #aeaeae;

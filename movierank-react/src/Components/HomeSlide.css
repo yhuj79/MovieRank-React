@@ -1,6 +1,8 @@
 .homeslide_div {
   width: 730px;
+  height: 400px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .homeslide_img {
   width: 400px;

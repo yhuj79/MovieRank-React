@@ -1,26 +1,33 @@
+@keyframes homeAct {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .home_div {
   display: flex;
   margin: 15px;
 }
 .home_homeslide {
-  height: 750px;
   background-color: #d5d5d5;
   border-radius: 10px;
   border: 3px solid #c3c3c3;
+  animation: homeAct 1s;
 }
 .home_sourcediv {
-  background-color: #fff;
   border-radius: 10px;
-  border: 3px solid #c3c3c3;
   display: block;
   text-align: center;
-  margin-top: 95px;
-  padding-top: 15px;
+  margin-top: 220px;
 }
 .home_sourceimg {
-  width: 250px;
+  width: 300px;
   margin: 20px;
   border-radius: 15px;
+  border: 3px solid #c3c3c3;
 }
 .homeslide_title {
   font-size: 70px;
@@ -38,6 +45,7 @@
   margin-left: 35px;
   border-radius: 10px;
   border: 3px solid #c3c3c3;
+  animation: homeAct 1s;
 }
 .home_charttitle {
   font-size: 45px;
@@ -50,9 +58,6 @@
 @media screen and (max-width: 767px) {
   .home_div {
     display: inline-block;
-  }
-  .home_sourcediv {
-    display: none;
   }
   .home_chart {
     margin-top: 30px;

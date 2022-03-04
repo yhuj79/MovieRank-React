@@ -18,12 +18,12 @@ import List2012 from './Components/List/List2012';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="app">
         <Header />
         <YearTab />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route path="/2021" element={<List2021 />} />
           <Route path="/2020" element={<List2020 />} />
           <Route path="/2019" element={<List2019 />} />

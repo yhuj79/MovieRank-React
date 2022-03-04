@@ -7,11 +7,12 @@ import './Home.css';
 import moment from 'moment';
 import 'moment/locale/ko';
 
-import Kofic from './SourceImage/source_kofic.jpg';
-import Mojo from './SourceImage/source_mojo.jpg';
-import Naver from './SourceImage/source_naver.jpg';
+import Kofic from './SourceImage/source_kofic.png';
+import Mojo from './SourceImage/source_mojo.png';
+import Naver from './SourceImage/source_naver.png';
 import Tomato from './SourceImage/source_tomato.jpg';
-import Meta from './SourceImage/source_meta.jpg';
+import Meta from './SourceImage/source_meta.png';
+import Kobis from './SourceImage/source_kobis.png';
 
 function Home() {
     const format = "YYYY.MM.DD";
@@ -25,11 +26,24 @@ function Home() {
                     <p className="homeslide_title">Yearly Box Office</p>
                     <HomeSlide />
                     <div className="home_sourcediv">
-                        <img className="home_sourceimg" alt="" src={Kofic} />
-                        <img className="home_sourceimg" alt="" src={Mojo} /><br />
-                        <img className="home_sourceimg" alt="" src={Naver} />
-                        <img className="home_sourceimg" alt="" src={Tomato} /><br />
-                        <img className="home_sourceimg" alt="" src={Meta} />
+                        <a href="https://www.kofic.or.kr/kofic/business/main/main.do" target="_blank" rel="noopener noreferrer">
+                            <img className="home_sourceimg" alt="" src={Kofic} />
+                        </a>
+                        <a href="https://www.kobis.or.kr/kobis/business/main/main.do" target="_blank" rel="noopener noreferrer">
+                            <img className="home_sourceimg" alt="" src={Kobis} />
+                        </a><br />
+                        <a href="https://www.boxofficemojo.com/?ref_=bo_nb_tt_mojologo" target="_blank" rel="noopener noreferrer">
+                            <img className="home_sourceimg" alt="" src={Mojo} />
+                        </a>
+                        <a href="https://www.rottentomatoes.com/" target="_blank" rel="noopener noreferrer">
+                            <img className="home_sourceimg" alt="" src={Tomato} />
+                        </a><br />
+                        <a href="https://www.metacritic.com/" target="_blank" rel="noopener noreferrer">
+                            <img className="home_sourceimg" alt="" src={Meta} />
+                        </a>
+                        <a href="https://movie.naver.com/" target="_blank" rel="noopener noreferrer">
+                            <img className="home_sourceimg" alt="" src={Naver} />
+                        </a>
                     </div>
                 </div>
                 <div className="home_chart">
