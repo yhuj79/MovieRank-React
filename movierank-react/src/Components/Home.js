@@ -17,7 +17,7 @@ import Kobis from './SourceImage/source_kobis.png';
 function Home() {
     const format = "YYYY.MM.DD";
     const last_sunday = moment().day(7).subtract(7, 'days').format(format);
-    const lastlast_sunday = moment().day(7).subtract(13, 'days').format(format);
+    const lastlast_sunday = moment().day(7).subtract(14, 'days').format(format);
     const yesterday = moment().subtract(1, 'days').format(format);
     return (
         <div className="list_div">
@@ -47,19 +47,17 @@ function Home() {
                     </div>
                 </div>
                 <div className="home_chart">
-                    <div style={{ display: 'flex' }}>
+                    <div>
                         <p className="home_charttitle">주간 박스오피스</p>
-                        <p className="home_chartday">&emsp;{lastlast_sunday} ~ {last_sunday}</p>
+                        <p className="home_chartday">&nbsp;{lastlast_sunday} ~ {last_sunday}</p>
                     </div>
-                    <br />
                     <RankWeekly />
                 </div>
                 <div className="home_chart">
-                    <div style={{ display: 'flex' }}>
+                    <div>
                         <p className="home_charttitle">일간 박스오피스</p>
-                        <p className="home_chartday">&emsp;{yesterday}</p>
+                        <p className="home_chartday">&nbsp;{yesterday}</p>
                     </div>
-                    <br />
                     <RankDaily />
                 </div>
             </div>

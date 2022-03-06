@@ -5,7 +5,7 @@ import 'moment/locale/ko';
 
 const key = "d4099bba8c7c754a4c1c195450e4a028";
 const format = "YYYYMMDD";
-const last_sunday = moment().day(7).subtract(7, 'days').format(format);
+const last_sunday = moment().day(7).subtract(14, 'days').format(format);
 
 class RankWeekly extends Component {
     state = {};
