@@ -7,9 +7,9 @@ function Header() {
         textDecoration: 'none',
     }
     return (
-        <div className="header_">
+        <div className="header_div">
             <NavLink to="/" style={NavStyle}>
-                <span className="header_title">Movie Rank</span>
+                <span className="header_title">MOVIE RANK</span>
             </NavLink>
         </div>
     );

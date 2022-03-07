@@ -1,20 +1,22 @@
-.header_ {
+.header_div {
   background-color: #c9c9c9;
   display: flex;
   text-align: center;
   justify-content: center;
-  margin-bottom: 40px;
-  padding: 5px 20px 20px;
+  margin: 22px 22px 40px;
+  padding: 20px 20px 25px;
+  border-radius: 10px;
 }
 .header_title {
   text-decoration: none;
+  font-family: "Righteous";
   font-size: 100px;
   font-weight: 700;
   color: #232323;
   text-shadow: 3px 3px 3px #707070;
 }
 @media screen and (max-width: 767px) {
-  .header_ {
-    width: 800px;
+  .header_div {
+    width: 750px;
   }
 }
