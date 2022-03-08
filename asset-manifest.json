@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MovieRank-React/static/css/main.bd253ccf.css",
-    "main.js": "/MovieRank-React/static/js/main.dde6b0f4.js",
+    "main.css": "/MovieRank-React/static/css/main.e499b54e.css",
+    "main.js": "/MovieRank-React/static/js/main.c39e19be.js",
     "static/js/787.426cc171.chunk.js": "/MovieRank-React/static/js/787.426cc171.chunk.js",
     "static/media/source_kofic.png": "/MovieRank-React/static/media/source_kofic.4ca1dfc5d01c51736cce.png",
     "static/media/source_naver.png": "/MovieRank-React/static/media/source_naver.420b8094358074aaa772.png",
@@ -10,12 +10,12 @@
     "static/media/source_kobis.png": "/MovieRank-React/static/media/source_kobis.0abb86ac802b219a7a26.png",
     "static/media/source_mojo.png": "/MovieRank-React/static/media/source_mojo.d97c6e19c567a4c18e95.png",
     "index.html": "/MovieRank-React/index.html",
-    "main.bd253ccf.css.map": "/MovieRank-React/static/css/main.bd253ccf.css.map",
-    "main.dde6b0f4.js.map": "/MovieRank-React/static/js/main.dde6b0f4.js.map",
+    "main.e499b54e.css.map": "/MovieRank-React/static/css/main.e499b54e.css.map",
+    "main.c39e19be.js.map": "/MovieRank-React/static/js/main.c39e19be.js.map",
     "787.426cc171.chunk.js.map": "/MovieRank-React/static/js/787.426cc171.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd253ccf.css",
-    "static/js/main.dde6b0f4.js"
+    "static/css/main.e499b54e.css",
+    "static/js/main.c39e19be.js"
   ]
 }
