@@ -10,6 +10,11 @@ function addComma(num) {
 
 function RankDailyItem({ rankOldAndNew, rankInten, rank, movieNm, openDt, audiCnt, salesShare }) {
 
+    const movieLink = () => {
+        window.open('about:blank').location.href =
+            `https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=${movieNm}`;
+    }
+
     function rankpercent() {
         if (salesShare > 50) {
             return <Percent50>점유율 {salesShare}%</Percent50>
@@ -28,7 +33,7 @@ function RankDailyItem({ rankOldAndNew, rankInten, rank, movieNm, openDt, audiCn
         }
     }
     return (
-        <div className="chartitem_div">
+        <div className="chartitem_div" onClick={movieLink}>
             <div className="chartitem_movietitle">
                 <div className="chartitem_movietitleOne">
                     <div>
