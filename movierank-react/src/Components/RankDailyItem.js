@@ -39,11 +39,14 @@ function RankDailyItem({ rankOldAndNew, rankInten, rank, movieNm, openDt, audiCn
                     <div>
                         <p>
                             {rank}위 :&emsp;
-                            {movieNm.length > 20 ? (
-                                <span style={{ fontSize: '16px' }}>{movieNm}</span>
-                            ) : (movieNm.length > 13
-                                ? <span style={{ fontSize: '20px' }}>{movieNm}</span>
-                                : <span>{movieNm}</span>
+                            {movieNm.length > 25 ? (
+                                <span style={{ fontSize: '14px' }}>{movieNm}</span>
+                            ) : (movieNm.length > 20
+                                ? <span style={{ fontSize: '16px' }}>{movieNm}</span>
+                                : (movieNm.length > 13
+                                    ? <span style={{ fontSize: '20' }}>{movieNm}</span>
+                                    : <span>{movieNm}</span>
+                                )
                             )}
                         </p>
                     </div>
