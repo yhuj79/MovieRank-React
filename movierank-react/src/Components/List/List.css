@@ -19,15 +19,3 @@
 .list_row {
   display: flex;
 }
-@media screen and (max-width: 767px) {
-  .list_div {
-    width: 800px;
-  }
-  .list_longdiv {
-    width: 800px;
-  }
-  .list_row {
-    display: inline-block;
-    zoom: 0.8;
-  }
-}

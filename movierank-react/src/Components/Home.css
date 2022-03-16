@@ -58,13 +58,3 @@
   font-weight: 600;
   margin: -10px 0 15px;
 }
-@media screen and (max-width: 767px) {
-  .home_div {
-    display: inline-block;
-  }
-  .home_chart {
-    margin-top: 30px;
-    margin-left: 0;
-    width: 715px;
-  }
-}

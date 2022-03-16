@@ -19,7 +19,7 @@ import List2012 from './Components/List/List2012';
 function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
-      <div>
+      <div className="app">
         <Header />
         <YearTab />
         <Routes>
