@@ -12,7 +12,7 @@ function List2021() {
                     image="https://movie-phinf.pstatic.net/20211215_297/1639556766975z0641_JPEG/movie_image.jpg"
                     link="https://youtu.be/W7edvITC9g4"
                     release="2021.12.15."
-                    audience={7524693}
+                    audience={7548223}
                     tmeter={93} tscore={98}
                     mscore={71} mreview={8.9}
                     boxoffice={1835421947}

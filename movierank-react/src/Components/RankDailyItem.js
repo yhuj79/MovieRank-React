@@ -44,7 +44,7 @@ function RankDailyItem({ rankOldAndNew, rankInten, rank, movieNm, openDt, audiCn
                             ) : (movieNm.length > 20
                                 ? <span style={{ fontSize: '16px' }}>{movieNm}</span>
                                 : (movieNm.length > 13
-                                    ? <span style={{ fontSize: '20' }}>{movieNm}</span>
+                                    ? <span style={{ fontSize: '20px' }}>{movieNm}</span>
                                     : <span>{movieNm}</span>
                                 )
                             )}
