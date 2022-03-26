@@ -51,8 +51,7 @@ class RankDaily extends Component {
         }
         const { movies } = this.state;
         return (
-            <div style={loading}
-                className={movies ? "RankDaily" : "RankDaily-loading"}>
+            <div style={loading} className={movies ? "RankDaily" : "RankDaily-loading"}>
                 {movies ? this._renderMovies() : "Loading ···"}
             </div>
         );

@@ -9,7 +9,6 @@ function addComma(num) {
 }
 
 function RankDailyItem({ rankOldAndNew, rankInten, rank, movieNm, openDt, audiCnt, salesShare }) {
-
     const movieLink = () => {
         window.open('about:blank').location.href =
             `https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=${movieNm}`;
