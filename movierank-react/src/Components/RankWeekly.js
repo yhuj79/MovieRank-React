@@ -3,7 +3,7 @@ import RankWeeklyItem from './RankWeeklyItem';
 import moment from 'moment';
 import 'moment/locale/ko';
 
-const key = "d4099bba8c7c754a4c1c195450e4a028";
+const key = process.env.REACT_APP_API_KEY;
 const format = "YYYYMMDD";
 const last_sunday = moment().day(7).subtract(14, 'days').format(format);
 
