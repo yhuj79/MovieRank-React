@@ -12,10 +12,10 @@ function List2021() {
                     image="https://movie-phinf.pstatic.net/20211215_297/1639556766975z0641_JPEG/movie_image.jpg"
                     link="https://youtu.be/W7edvITC9g4"
                     release="2021.12.15."
-                    audience={7551410}
+                    audience={7551990}
                     tmeter={93} tscore={98}
                     mscore={71} mreview={8.9}
-                    boxoffice={1835421947}
+                    boxoffice={1892667830}
                     award="2021 세계 TOP 1 / MCU 솔로영화 1위"
                     actor="톰 홀랜드(피터 파커/스파이더맨), 젠데이아 콜먼(MJ), 베네딕트 컴버배치(닥터 스트레인지)"
                     story="‘미스테리오’의 계략으로 세상에 정체가 탄로난 스파이더맨 ‘피터 파커’는 하루 아침에 평범한 일상을 잃게 된다.
